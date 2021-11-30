@@ -1,16 +1,16 @@
 
-name:Daily Forecast
+name: Daily Forecast
 
 on:
-  schedule:
-  -cron: "0 14 * * *"
-  workflow_dispatch:
+   schedule:
+   - cron: "0 14 * * *"
+   workflow_dispatch:
   
-  env:
-  MAIL_USER_EMAIL: ${{secrets.MAIL_USER_EMAIL}}	  
-  MAIL_USER_PASSWORD: ${{secrets.MAIL_USER_PASSWORD}}}}																 
-  MAIL_FROM: ${{secrets.MAIL_FROM}}
-  MAIL_TO: ${{secrets.MAIL_TO}}
+env:
+    MAIL_USER_EMAIL: ${{secrets.MAIL_USER_EMAIL}}	  
+    MAIL_USER_PASSWORD: ${{secrets.MAIL_USER_PASSWORD}}}}																 
+    MAIL_FROM: ${{secrets.MAIL_FROM}}
+    MAIL_TO: ${{secrets.MAIL_TO}}
   
 jobs:
   report:
